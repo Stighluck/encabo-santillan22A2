@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="/css/support.css">
+    <script src="js/script.js" defer></script>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link id="favicon-light" rel="icon" href="assets/faviconBlack.png" type="image/x-icon">
+    <link id="favicon-dark" rel="icon" href="assets/faviconWhite.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    
+</head>
+<body>
+    <header>
+
+        <!-- #region nav -->
+        <nav>
+            <div class="headerlogo"><img src="assets/BlackLogo.png" alt="Logo"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li>
+                    <a class="pointer">City Guides ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="cityguide-tokyo.html">Tokyo</a></li>
+                        <li><a href="cityguide-osaka.html">Osaka</a></li>
+                        <li><a href="cityguide-kyoto.html">Kyoto</a></li>
+                        <li><a href="cityguide-hokkaido.html">Hokkaido</a></li>
+                        <li><a href="cityguide-okinawa.html">Okinawa</a></li>
+                        <li><a href="cityguide-nagoya.html">Nagoya</a></li>
+                    </ul>
+                </li>
+                <li><a class="selected">Support</a></li>
+                <li><a class="pointer" onclick="openContactUs()">Contact Us</a></li>
+            </ul>
+            <div><button class="login" onclick="openLogin()">Login</button></div>
+        </nav>
+        <!-- #endregion nav -->
+      
+        <div class="banner-container">
+            <div class="darkoverlay"></div>
+            <img class="supportbanner" src="assets/supportbanner.png" alt="">
+        </div>
+    </header>
+    <section class="supportpage">
+        <div class="supportpagewrap">
+            <div class="faqs">
+                <h1><Strong>Frequently </Strong> Asked Questions</h1>
+                <article class="questionbox">
+                    <div class="question">
+                        <p>Question: What is the best time to visit Japan?</p>
+                    </div>
+                    <div class="arrow" onclick="toggleAnswer(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Answer: The best time to visit Japan depends on what you want to experience. 
+                            For cherry blossoms, late March to early April is ideal. If you prefer 
+                            autumn foliage, visit from late October to early December. Summer (June to August) 
+                            is great for festivals, but it can be hot and humid. Winter (December to February) 
+                            offers excellent skiing opportunities in places like Hokkaido.
+                        </p>
+                    </div>
+                    </article>
+                <article class="questionbox">
+                    <div class="question">
+                        <p>Question: Do I need a visa to travel to Japan?</p>
+                    </div>
+                    <div class="arrow" onclick="toggleAnswer(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Answer: It depends on your nationality. Citizens from many countries, including the USA, 
+                            Canada, the UK, and Australia, can enter Japan without a visa for short stays (usually 
+                            up to 90 days). However, it’s always best to check the latest visa requirements with the 
+                            Japanese embassy or consulate in your country before traveling.
+                        </p>
+                    </div>
+                    </article>
+                <article class="questionbox">
+                    <div class="question">
+                        <p>Question: What is the best way to get around Japan?</p>
+                    </div>
+                    <div class="arrow" onclick="toggleAnswer(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Answer: Japan has an extensive and efficient public transportation system. The Japan Rail Pass 
+                            is highly recommended for tourists, allowing unlimited travel on JR trains, including the Shinkansen 
+                            (bullet trains), for a fixed period. In cities, subways, buses, and taxis are widely available. 
+                            Renting a car can be a good option for exploring rural areas.
+                        </p>
+                    </div>
+                    </article>  
+                <article class="questionbox">
+                    <div class="question">
+                        <p>Question: What are the must-visit places in Japan?</p>
+                    </div>
+                    <div class="arrow" onclick="toggleAnswer(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Answer: Japan has many iconic destinations. Tokyo is a bustling metropolis with attractions like the Shibuya 
+                            Crossing and Tokyo Tower. Kyoto is famous for its temples, shrines, and traditional tea houses. Hiroshima 
+                            offers a poignant history lesson and the beautiful Itsukushima Shrine. Other popular destinations include 
+                            Osaka, Nara, Hokkaido, and Okinawa.
+                        </p>
+                    </div>
+                    </article>
+                <article class="questionbox">
+                    <div class="question">
+                        <p>Question: Is it safe to travel to Japan?</p>
+                    </div>
+                    <div class="arrow" onclick="toggleAnswer(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Answer: Japan is one of the safest countries in the world for travelers. Crime rates are low, and the public 
+                            transportation system is reliable and safe. However, it’s always wise to take usual travel precautions, such 
+                            as keeping your belongings secure and being aware of your surroundings. Additionally, Japan is prone to natural 
+                            disasters like earthquakes and typhoons, so staying informed about weather conditions is important.
+                        </p>
+                    </div>
+                </article>   
+            </div>
+        </div>
+    </section>
+
+    <!-- #region loginform --> 
+    <section id="overlaylogin" class="overlaylogin">
+        <div id=loginform class="loginform">
+            <div class="loginformgrid">
+                <div class="translucentside">
+                    <div class="translucent-container">
+                        <div class="loginlogoctr"><img class="loginformlogo" src="assets/WhiteLogo.png" alt=""></div>
+                        <div class="loginwelcomectr">
+                            <h1>Hello,</h1>
+                            <h1><strong>Welcome!</strong></h1>
+                            <h2>Don't have an <strong>Account?</strong></h2>
+                        </div>
+                        <button class="btnsignup">Sign Up</button>
+                    </div>
+                </div>
+                <div class="opaqueside">
+                    <div class="opaque-container">
+                        <div class="exit" onclick="exitLogin()">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-6.489 5.8a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="loginacctr">   
+                            <h2>Log in to your <strong>Account</strong></h2>  
+                        </div>
+                        <div class="usernamebox">
+                            <h4>Username</h4>
+                            <p><input class="textbox" type="text"></p>
+                        </div>
+                        <div class="passwordbox">
+                            <h4>Password</h4>
+                            <p><input class="textbox" type="text"></p>
+                      
+                        </div>
+                        <button class="btnsignin">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- #endregion loginform -->
+      
+    <!-- #region ContactForm -->
+    <section id="overlaycontact" class="overlaycontact">
+        <div id="contactform" class="contactform">
+            <div class="contactformgrid">
+                <div class="contacttranslucentside">
+                    <div>
+                        <div class="contactlogoctr">
+                            <img class="contactformlogo" src="assets/WhiteLogo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="contactopaqueside">
+                    <div class="contact-opaque-container">
+                        <div class="exit" onclick="exitContactUs()">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-6.489 5.8a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="contactacctr">   
+                            <h2><strong>Contact </strong>Us!</h2>  
+                        </div>
+                        <div class="contactbox">
+                            <p><input class="contacttextbox" type="text" placeholder="Name"></p>
+                        </div>
+                        <div class="contactbox">
+                            <p><input class="contacttextbox" type="text" placeholder="Email"></p>
+                        </div>
+                        <div class="contactbox">
+                            <p><input class="contacttextbox" type="text" placeholder="Phone"></p>
+                        </div>
+                        <button class="btnsend">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+ 
+
+    <!-- #region footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footerlogo"><img src="assets/WhiteLogo.png" alt=""></div>
+            <p>
+                Japan Travels offers unforgettable experiences, exploring Japan's
+                rich culture, stunning landscapes, and vibrant cities. Join us for personalized
+                tours that reveal the heart of this fascinating, diverse country.
+            </p>
+            <ul class="socials">
+                <li>
+                    <a href="" class="socialctr">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="socialctr">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="socialctr">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="socialctr">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>   
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Designed by &copy; Encabo & Santillan</p>
+            <p class="footer-center">BSIT 22A2 for ICT 008 Final Project</p>
+          
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="cityguide-tokyo.html">City Guides</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a class="pointer" onclick="openContactUs()">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- #endregion footer -->
+
+</body>
+</html>
